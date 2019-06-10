@@ -11,6 +11,7 @@ networks:
         - subnet: 172.32.0.0/16
 
 volumes:
+  rabbitmq: {}
   mysql:
     driver: local
 
@@ -62,5 +63,12 @@ services:
     volumes:
       - mysql:/var/lib/mysql
       - ./src/mysql:/usr/home/database
+
+  rabbitmq-srm:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_srm
+    networks:
+      srm:
+        ipv4_address: 172.32.0.104
 
 
