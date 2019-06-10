@@ -70,5 +70,3 @@ services:
     networks:
       srm:
         ipv4_address: 172.32.0.104
-
-

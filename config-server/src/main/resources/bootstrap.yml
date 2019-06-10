@@ -52,7 +52,6 @@ spring:
 #          searchLocations: file:///usr/local/config-repo/estoqueservice
 
 
-
 encrypt:
   key: '12313213'
 
