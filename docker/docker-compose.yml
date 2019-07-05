@@ -19,10 +19,8 @@ services:
 
   estoque-service:
     image: srm/estoque-service:parte2
-    container_name: srm_estoque
     networks:
       srm:
-        ipv4_address: 172.32.0.101
     expose:
       - 8080
     environment:
@@ -37,7 +35,6 @@ services:
     container_name: srm_configserver
     networks:
       srm:
-        ipv4_address: 172.32.0.103
     expose:
       - 8080
     environment:
